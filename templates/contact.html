@@ -1,0 +1,126 @@
+{% extends "base.html" %}
+
+{% block title %}Contact{% endblock %}
+
+{% block content %}
+
+  <div class="card card-block w-50 mx-auto" style="padding:15px; margin-top:25px">
+      <legend style="padding: 15px">Contact and enquiry form</legend>
+    <form>
+     <fieldset>
+
+<!-- Form Name -->
+
+
+<!-- Text input-->
+<div class="form-group" >
+<!--  <label class="col-md-12 control-label" for="textinputname">Name*</label>-->
+  <div class="col-md-12">
+  <input id="textinputname" name="textinputname" type="text" placeholder="Name" class="form-control input-md" required="">
+
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+<!--  <label class="col-md-12 control-label" for="textinputemail">E-mail*</label>-->
+  <div class="col-md-12">
+  <input id="textinputemail" name="textinputemail" type="text" placeholder="E-mail" class="form-control input-md" required="">
+
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+<!--  <label class="col-md-12 control-label" for="textinputnumber">Contact number</label>-->
+  <div class="col-md-12">
+  <input id="textinputnumber" name="textinputnumber" type="text" placeholder="Phone number" class="form-control input-md">
+
+  </div>
+</div>
+           <div class="col-md-12">
+               <p><b>What kind of training are you enquiring about or interested in?</b></p>
+           </div>
+<!-- Multiple Checkboxes -->
+<div class="form-group">
+    <label class="col-md-12 control-label" for="cblesson-0"><b>Group lessons</b></label>
+  <div class="col-md-12">
+  <div class="checkbox">
+    <label for="cblesson-0">
+      <input type="checkbox" name="cblesson" id="cblesson-0" value="WL">
+      Weightlifting
+    </label>
+	</div>
+  <div class="checkbox">
+    <label for="cblesson-1">
+      <input type="checkbox" name="cblesson" id="cblesson-1" value="PL">
+      Powerlifting
+    </label>
+	</div>
+  </div>
+</div>
+
+<!-- Multiple Checkboxes -->
+<div class="form-group">
+    <label class="col-md-12 control-label" for="cbpersonal-0"><b>Personal training</b></label>
+  <div class="col-md-12">
+  <div class="checkbox">
+    <label for="cbpersonal-0">
+      <input type="checkbox" name="cbpersonal" id="cbpersonal-0" value="KB">
+      Kettlebell
+    </label>
+	</div>
+  <div class="checkbox">
+    <label for="cbpersonal-1">
+      <input type="checkbox" name="cbpersonal" id="cbpersonal-1" value="BW">
+      Body-weight
+    </label>
+	</div>
+  <div class="checkbox">
+    <label for="cbpersonal-2">
+      <input type="checkbox" name="cbpersonal" id="cbpersonal-2" value="WL">
+      Weightlifting
+    </label>
+	</div>
+  <div class="checkbox">
+    <label for="cbpersonal-3">
+      <input type="checkbox" name="cbpersonal" id="cbpersonal-3" value="PL">
+      Powerlifting
+    </label>
+	</div>
+  <div class="checkbox">
+    <label for="cbpersonal-4">
+      <input type="checkbox" name="cbpersonal" id="cbpersonal-4" value="SSC">
+      Sport strength &amp; conditioning
+    </label>
+	</div>
+  </div>
+</div>
+
+<!-- Textarea -->
+<div class="form-group">
+  <label class="col-md-12 control-label" for="additionalk">Any additional info or questions:</label>
+  <div class="col-md-12">
+    <textarea class="form-control" id="additionalk" name="additionalk"></textarea>
+  </div>
+</div>
+
+<!-- Button -->
+<div class="form-group">
+  <label class="col-md-12 control-label" for="submit"></label>
+  <div class="col-md-12">
+    <button id="submit" name="submit" class="btn btn-primary">Submit</button>
+  </div>
+</div>
+
+</fieldset>
+</form>
+  </div>
+
+
+{% endblock %}
+
+
+
+
+
